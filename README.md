@@ -1,38 +1,95 @@
-         
+# Digital Agriculture Management System (AMS)
 
-           SOFTWARE REQUIREMENTS SPECIFICATION
-  DIGITAL AGRICULTURE MANAGEMENT SYSTEM
-Project Mentor: [Er. Rambabu Buri]
-Department: Computer science and engineering
-Institute: Arya college of engineering & It
-Project Type: Digital Agricultural Management System
+A Java-based web application designed to help organize and manage farm-related information, crop cycles, operational activities, and financial records through a centralized digital web interface.
+
+## Quick Access — Project Links
+
+| Resource | Access |
+| :--- | :--- |
+| **GitHub Source Code** | [Digital Agriculture Management System Repository](https://github.com/your-username/digital-agriculture-management-system) |
+| **Local Frontend** | Access the user interface via HTML5/CSS3 templates configured in your local environment |
+| **Local Backend API / Server** | Java Web / Application Server running on Apache Tomcat |
+| **Database Management** | MySQL Database Server managed via MySQL Workbench |
+| **Project Documentation (SRS & Diagrams)** | [View Complete SRS Document & System Diagrams](https://drive.google.com/drive/folders/your-folder-link) |
+
+> **Deployment Note:** The frontend and Java backend require local or server-side configuration of your MySQL database connection (JDBC URL, username, and password) before launching production or testing environments.
+
+# 12-Week Project Development Timeline
+## Digital Agriculture Management System (AMS)
+
+This document outlines the phased 12-week execution plan for developing the Digital Agriculture Management System, mapping tasks across team responsibilities[cite: 8].
+
+| Week | Phase / Focus Area | Primary Responsible Role | Key Deliverables & Milestones |
+| :--- | :--- | :--- | :--- |
+| **Week 1** | Requirements & Scoping | All Team Members | Finalize project scope, identify user categories, and define core functional boundaries. |
+| **Week 2** | SRS & Architectural Design | Documentation (Priyanshu Yadav) | Complete the Software Requirements Specification (SRS), system architecture design, and initial DFD/ERD . |
+| **Week 3** | UI Wireframing & Setup | Frontend (Krishan Kumar) | Design page layouts, navigation menus, and establish HTML5/CSS3 styling templates. |
+| **Week 4** | Frontend Form Development | Frontend (Krishan Kumar) | Implement data-entry forms, UI components, and client-side validation rules. |
+| **Week 5** | Database Schema Design | Database (Abhimanu Kumar) | Design MySQL database schema, tables (`USERS`, `FARMS`, `CROPS`, etc.), relationships, and constraints. |
+| **Week 6** | Data Layer & Persistence | Database & Documentation | Set up database connectivity, write core SQL queries, and configure persistent data operations. |
+| **Week 7** | Backend Setup & Routing | Backend (Amit Pathak) | Initialize the Java backend environment, configure application servers, and establish controller. |
+| **Week 8** | Business Logic Implementation | Backend (Amit Pathak) | Implement server-side validation, business rules, and backend data processing workflows. |
+| **Week 9** | Full-Stack Integration | Backend & Frontend | Connect HTML/CSS views and forms to Java backend endpoints and database services[cite: 8]. |
+| **Week 10** | System Integration & Testing | Testing & Integration (Sachin Kumar) | Connect all components, write test cases, and execute end-to-end workflow verification. |
+| **Week 11** | Defect Tracking & Bug Fixing | Testing & Integration (Sachin Kumar) | Identify integration errors, resolve failed data operations, and refine error-handling messages. |
+| **Week 12** | Final Documentation & Polish | Documentation & All Members | Finalize user guides, test evidence, README instructions, and package the repository for submission. |
+---
+
+## Team Members and Responsibilities
+
+| Name / Roll No. | Gmail | Role | Assigned Module & Responsibilities |
+| :--- | :--- | :--- | :--- |
+| **Krishan Kumar** |25EARCS703 | sinhakumar060@gmail.com | Frontend | Develop user interface using HTML and CSS; create pages, forms, navigation, responsive layouts, and connect screens to backend endpoints. |
+| **Amit Pathak** | 25EARCS701 | amitpathak772004@gmail.com| Backend| Implement Java business logic, authentication/authorization if included, validation, and application workflows. |
+| **Abhimanu Kumar** | 25EARCS7OO | Sabhimanusingh3071@gmail.com | Database| Design MySQL schema, tables, relationships, queries, constraints, and persistence operations. |
+| **Sachin Kumar** |25EARCS710 | sachink9845k@gmail.com | Testing & Integration | Integrate frontend, backend, and database; prepare test cases; verify workflows and fix integration defects. |
+| **Priyanshu Yadav** | 25EARCS707 | yadavpriyanshu362@gmail.com | Documentation & Database| Prepare SRS, diagrams, project report, setup instructions, test evidence, user documentation, and assist with database design. |
+
+# Phase 1: Requirements and Scoping (Week 1)
+
+## 1. Abstract & Purpose
+- **Digital Agriculture Management System (DAMS)** organizes and manages farm-related information in a structured digital form.
+- Centralizes farm, crop, activity, inventory, sales, expense, and report information to reduce manual record keeping.
+
+## 2. Project Scope & Assumptions
+- **In-Scope:** Frontend user interface, farm/farmer records, crop details, farm activities, inventory tracking, financial records, Java backend persistence, and search/listing functions.
+- **Out-of-Scope:** IoT sensor integration, live weather forecasting, satellite analysis, AI crop diagnosis, and online marketplace functions unless separately implemented.
+
+## 3. Users and Access 
+- **Administrator:** Manage user accounts and system-level records.
+- **Farmer / Farm User:** Enter and maintain farm, crop, activity, inventory, and financial records.
+- **Staff / Data Entry User (Optional):** Enter or update permitted day-to-day records.
+- **Viewer (Optional):** Read permitted records and summaries without modification.
+
+## 4. Functional & Non-Functional Requirements 
+- **Functional Requirements (FR-01 to FR-12):** Covers application access, farm/crop/activity records, data validation, database persistence, search/listing, updates, and error handling.
+- **Non-Functional Requirements:** Covers usability, performance, reliability, data integrity, security, maintainability, and compatibility.
+---
+
+## Project Directory Structure
 
 
 
-Team Members and Responsibilities
-The team allocation below follows the five-role distribution provided for the Digital Agriculture Management System. Names, enrollment numbers, contact details, and individual contributions should be filled in or verified by the project team; they have not been invented in this document.
-Name or roll no.	Mob.no	                 Role	Assigned module and responsibilities
+# Phase 2: System Architecture and DFD/ERD Design (Week 2)
 
-Krishan Kumar
-[25EARCS703]	
-+91 7903343891	 Frontend	Develop user interface using HTML and CSS; create pages, forms, navigation, responsive layouts, and connect screens to backend endpoints as applicable.
+## 1. System Architecture 
+- **Client Tier / Presentation Layer:** Built with HTML5, CSS3, and JavaScript, featuring dashboards, crop management views, and administrative panels.
+- **Application / Web Server Tier:** Java Web application server running on Apache Tomcat, handling HTTP/REST controllers, business services, and JDBC persistence operations.
+- **Data Tier:** MySQL Database Server managing user tables, crop records, soil data, and weather/market caches.
 
-Amit Pathak
-[25EARCS701]	
-+91 9162533711	 Backend	Implement Java business logic, authentication/authorization if included, validation, and application workflows.
+## 2. System Workflow and Data Flow Diagrams 
+- **Main Workflow:** Users access the web interface, authenticate via the Java backend, select modules, and execute CRUD operations against the MySQL database.
+- **Data Flow:** Captures input collection via frontend forms, server-side validation, database persistence, and formatted response rendering.
 
-Abhimanu Kumar
-[25EARCS7OO]	
-+91 8084973071	 Database	Design MySQL schema, tables, relationships, queries, constraints, and persistence operations.
+## 3. Database Entity Relationship Diagram (ERD) 
+- Conceptual data models include tables for `USERS`, `FARMS`, `CROPS`, `ACTIVITIES`, `INVENTORY`, and `SALES_EXPENSES`.
+- Establishes primary and foreign key constraints to maintain referential integrity across related farm entities.
 
-Sachin Kumar
-[25EARCS710]	
-+91 8769584636	 Testing and Integration	Integrate frontend, backend, and database; prepare test cases; verify workflows and fix integration defects.
-
-Priyanshu Yadav
-[25EARCS707]	
-+91 6350054158	Documentation & Database	Prepare SRS, diagrams, project report, setup instructions, test evidence, and user documentation. Do work on database .
-
+## 4. Technology Stack (Section 7)
+- **Frontend:** HTML5 and CSS3.
+- **Backend:** Java (servlets/JSP or Spring framework mapping implementation).
+- **Database:** MySQL managed via MySQL Workbench.
+```text
 
  1. Abstract
 Digital Agriculture Management System (DAMS) is a software application intended to help organize and manage farm-related information in a structured digital form. The system can provide a centralized interface for maintaining farm, crop, activity, inventory, sales, expense, and report information, depending on the modules implemented by the project team. The proposed system uses HTML and CSS for the frontend, Java for backend processing, and MySQL for persistent data storage. Its purpose is to reduce manual record keeping, improve data organization, and make stored agricultural information easier to retrieve and review.
