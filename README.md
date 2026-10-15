@@ -14,28 +14,10 @@ A Java-based web application designed to help organize and manage farm-related i
 
 > **Deployment Note:** The frontend and Java backend require local or server-side configuration of your MySQL database connection (JDBC URL, username, and password) before launching production or testing environments.
 
-# 12-Week Project Development Timeline
-## Digital Agriculture Management System (AMS)
 
-This document outlines the phased 12-week execution plan for developing the Digital Agriculture Management System, mapping tasks across team responsibilities[cite: 8].
+## Week 1: Team Formation + Guide Selection + Abstract
 
-| Week | Phase / Focus Area | Primary Responsible Role | Key Deliverables & Milestones |
-| :--- | :--- | :--- | :--- |
-| **Week 1** | Requirements & Scoping | All Team Members | Finalize project scope, identify user categories, and define core functional boundaries. |
-| **Week 2** | SRS & Architectural Design | Documentation (Priyanshu Yadav) | Complete the Software Requirements Specification (SRS), system architecture design, and initial DFD/ERD . |
-| **Week 3** | UI Wireframing & Setup | Frontend (Krishan Kumar) | Design page layouts, navigation menus, and establish HTML5/CSS3 styling templates. |
-| **Week 4** | Frontend Form Development | Frontend (Krishan Kumar) | Implement data-entry forms, UI components, and client-side validation rules. |
-| **Week 5** | Database Schema Design | Database (Abhimanu Kumar) | Design MySQL database schema, tables (`USERS`, `FARMS`, `CROPS`, etc.), relationships, and constraints. |
-| **Week 6** | Data Layer & Persistence | Database & Documentation | Set up database connectivity, write core SQL queries, and configure persistent data operations. |
-| **Week 7** | Backend Setup & Routing | Backend (Amit Pathak) | Initialize the Java backend environment, configure application servers, and establish controller. |
-| **Week 8** | Business Logic Implementation | Backend (Amit Pathak) | Implement server-side validation, business rules, and backend data processing workflows. |
-| **Week 9** | Full-Stack Integration | Backend & Frontend | Connect HTML/CSS views and forms to Java backend endpoints and database services[cite: 8]. |
-| **Week 10** | System Integration & Testing | Testing & Integration (Sachin Kumar) | Connect all components, write test cases, and execute end-to-end workflow verification. |
-| **Week 11** | Defect Tracking & Bug Fixing | Testing & Integration (Sachin Kumar) | Identify integration errors, resolve failed data operations, and refine error-handling messages. |
-| **Week 12** | Final Documentation & Polish | Documentation & All Members | Finalize user guides, test evidence, README instructions, and package the repository for submission. |
----
-
-## Team Members and Responsibilities
+   Team Members and Responsibilities 
 
 | Name / Roll No. | Gmail | Role | Assigned Module & Responsibilities |
 | :--- | :--- | :--- | :--- |
@@ -45,15 +27,20 @@ This document outlines the phased 12-week execution plan for developing the Digi
 | **Sachin Kumar** |25EARCS710 | sachink9845k@gmail.com | Testing & Integration | Integrate frontend, backend, and database; prepare test cases; verify workflows and fix integration defects. |
 | **Priyanshu Yadav** | 25EARCS707 | yadavpriyanshu362@gmail.com | Documentation & Database| Prepare SRS, diagrams, project report, setup instructions, test evidence, user documentation, and assist with database design. |
 
-# Phase 1: Requirements and Scoping (Week 1)
 
 ## 1. Abstract & Purpose
-- **Digital Agriculture Management System (DAMS)** organizes and manages farm-related information in a structured digital form.
+- **Digital Agriculture Management System (DAMS)** organizes and manages farm-related information in a structured digital form. Digital Agriculture Management System (DAMS) is a software application intended to help organize and manage farm-related information in a structured digital form. The system can provide a centralized interface for maintaining farm, crop, activity, inventory, sales, expense, and report information, depending on the modules implemented by the project team. The proposed system uses HTML and CSS for the frontend, Java for backend processing, and MySQL for persistent data storage. Its purpose is to reduce manual record keeping, improve data organization, and make stored agricultural information easier to retrieve and review.
 - Centralizes farm, crop, activity, inventory, sales, expense, and report information to reduce manual record keeping.
 
 ## 2. Project Scope & Assumptions
 - **In-Scope:** Frontend user interface, farm/farmer records, crop details, farm activities, inventory tracking, financial records, Java backend persistence, and search/listing functions.
 - **Out-of-Scope:** IoT sensor integration, live weather forecasting, satellite analysis, AI crop diagnosis, and online marketplace functions unless separately implemented.
+
+
+
+# Week 2: Software Requirements Specification (SRS)
+
+
 
 ## 3. Users and Access 
 - **Administrator:** Manage user accounts and system-level records.
@@ -66,11 +53,6 @@ This document outlines the phased 12-week execution plan for developing the Digi
 - **Non-Functional Requirements:** Covers usability, performance, reliability, data integrity, security, maintainability, and compatibility.
 ---
 
-## Project Directory Structure
-
-
-
-# Phase 2: System Architecture and DFD/ERD Design (Week 2)
 
 ## 1. System Architecture 
 - **Client Tier / Presentation Layer:** Built with HTML5, CSS3, and JavaScript, featuring dashboards, crop management views, and administrative panels.
@@ -89,7 +71,9 @@ This document outlines the phased 12-week execution plan for developing the Digi
 - **Frontend:** HTML5 and CSS3.
 - **Backend:** Java (servlets/JSP or Spring framework mapping implementation).
 - **Database:** MySQL managed via MySQL Workbench.
-```text
+
+## Week 3: UML & System Design
+<img width="1312" height="1199" alt="image" src="https://github.com/user-attachments/assets/b1a67295-3ef1-4fd2-822c-3d1e9b2140f9" />
 
  1. Abstract
 Digital Agriculture Management System (DAMS) is a software application intended to help organize and manage farm-related information in a structured digital form. The system can provide a centralized interface for maintaining farm, crop, activity, inventory, sales, expense, and report information, depending on the modules implemented by the project team. The proposed system uses HTML and CSS for the frontend, Java for backend processing, and MySQL for persistent data storage. Its purpose is to reduce manual record keeping, improve data organization, and make stored agricultural information easier to retrieve and review.
